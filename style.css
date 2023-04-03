@@ -6,8 +6,9 @@
 }
 
 body{
-    background-color: black;
-    color: white;
+    background-color: gainsboro;
+    /* background-image: url(images/sbg.png); */
+    color: black;
 }
 
 /* header start */
@@ -15,7 +16,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/lucy.png);
+    background-image: url(images/bg.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -33,7 +34,15 @@ flex-wrap: wrap;
 }
 
 .logo{
-    width: 140px;
+    width: 100px;
+}
+
+.logo-wave{
+    width: 50px;
+}
+
+.logo-heart{
+    width: 20px;
 }
 
 nav ul li{
@@ -43,8 +52,9 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
     font-size: 18px;
     position: relative;
 }
@@ -53,7 +63,7 @@ nav ul li ::after{
     content: '';
     width: 0;
     height: 3px;
-    background: turquoise;
+    background: crimson;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -76,7 +86,7 @@ nav ul li :hover::after{
 }
 
 .header-text h1 span{
-    color: turquoise;
+    color: crimson;
 }
 /* header end */
 
@@ -84,7 +94,7 @@ nav ul li :hover::after{
 /* About start */
 #about{
     padding: 80px 0px;
-    color: white;
+    color: black;
 }
 
 .row{
@@ -92,6 +102,8 @@ nav ul li :hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.center-align
 
 .about-col-1{
     flex-basis: 35%;
@@ -108,12 +120,13 @@ nav ul li :hover::after{
 }
 
 .subtitle{
-    color: white;
+    color: black;
     font-size: 60px;
     font-weight: 600;
 }
 
 .tab-titles{
+    text-align: center;
     display: flex;
     margin: 20px 0px 40px;
 }
@@ -124,13 +137,15 @@ nav ul li :hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    text-decoration: underline;
+    /* font-weight: bold; */
 }
 
-.tab-links::after{
+.tab-links ::after{
     content: '';
     width: 0;
     height: 3px;
-    background: turquoise;
+    background: crimson;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -147,7 +162,7 @@ margin: 10px 0;
 }
 
 .tab-contents ul li span{
-    color: powderblue;
+    color: rgb(198, 32, 66);
     font-size: 14px;
 }
 
@@ -160,12 +175,25 @@ margin: 10px 0;
 /* about end */
 
 /* services start */
+.more{
+    color: black;
+}
+
 #services{
     padding: 30px 0;
 }
 
 .center-align{
     text-align: center;
+}
+
+.link-logo{
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
 }
 
 .services-list{
@@ -176,8 +204,8 @@ margin: 10px 0;
 }
 
 .services-list div{
-    background: #262626;
-    padding: 40px;
+    background: pink;
+    padding: 40px 40px 40px 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px; /* rounds corners */
@@ -198,14 +226,14 @@ margin: 10px 0;
 
 .services-list div a{
     text-decoration: none;
-    color: white;
+    /* color: white; */
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 
 .services-list div:hover{
-    background: turquoise;
+    background: crimson;
     transform: scale(1.1);
     /* transform: translateY(-10px); */
 }
@@ -216,4 +244,10 @@ margin: 10px 0;
 
 #portfolio{
     padding: 50px 0;
+}
+
+.footer{
+    background-color: rgb(190, 190, 190);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
