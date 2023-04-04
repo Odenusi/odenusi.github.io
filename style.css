@@ -103,7 +103,6 @@ nav ul li :hover::after{
     flex-wrap: wrap;
 }
 
-
 .about-col-1{
     flex-basis: 35%;
 }
@@ -204,7 +203,7 @@ margin: 10px 0;
 
 .services-list div{
     background: pink;
-    padding: 40px 40px 40px 40px;
+    padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px; /* rounds corners */
